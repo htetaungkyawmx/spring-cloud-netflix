@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<main role="main" th:fragment="main">
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div th:replace="fragments/customers :: customers"></div>
+      <div th:replace="fragments/addresses :: addresses"></div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
